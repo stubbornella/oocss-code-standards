@@ -16,7 +16,7 @@ Class names should be camel case, with no dashes or underscores.
 .this_is_bad {}
 
 /* Bad - don't use dashes */
-.this-is-good {}
+.this-is-bad {}
 ```
 
 ### Indentation
