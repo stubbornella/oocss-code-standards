@@ -90,78 +90,6 @@ Each property must be on its own line and indented one level. There should be no
 }
 ```
 
-Properties should be grouped logically into three groups, each separated by a blank line, and in the following order: box model, positioning, and decoration. 
-
-The box model group contains:
-
-* width, height, min-width, min-height, max-width, max-height
-* margin, padding, border
-
-The positioning group contains:
-
-* left, right, top, bottom
-* float, display, position
-* overflow, zoom
-* z-index
-
-The decoration group contains any other properties necessary to style the element.
-
-```css
-/* Good */
-.stubbornella {
-    width: 200px
-    height: 100px;
-    padding: 1px;
-
-    position: absolute;
-    top: 50px;
-    left: 50px;
-
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-/* Bad - missing blank lines between groups*/
-.stubbornella {
-    width: 200px
-    height: 100px;
-    padding: 1px;
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-/* Bad - groups are out of order */
-.stubbornella {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-
-    width: 200px
-    height: 100px;
-    padding: 1px;
-
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-/* Bad - properties in wrong groups */
-.stubbornella {
-    width: 200px
-    height: 100px;
-    text-transform: uppercase;
-    top: 50px;
-    left: 50px;
-    padding: 1px;
-
-    position: absolute;
-
-    font-size: 14px; 
-}
-```
-
 ### Using CSS Preprocessors
 
 Keep nesting to 3 levels deep. 
@@ -223,7 +151,6 @@ Declare `@extend` followed by `@include` statements first in a declaration block
     @include font-size(14);
 }
 ```
-
 
 ### Vendor-Prefixed Properties
 
