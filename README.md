@@ -444,8 +444,6 @@ Selectors should never use HTML element IDs. Always use classes for applying sty
 }
 ```
 
-The author field should contain the username of the person who first created the file. Subsequent authors or primary maintainers may also choose to add their name. The browsers in which this file was tested should be listed next to @tested.
-
 ### Width and height on components
 
 No heights on anything that contains text. Components should be flexible and their widths should be controlled by grids.
@@ -522,3 +520,5 @@ Also, add file-level comments at the top of every CSS file, describing the file 
 * @requires     helpers.css (tied to the @name of another file)
 */
 ```
+
+The author field should contain the username of the person who first created the file. Subsequent authors or primary maintainers may also choose to add their name. The browsers in which this file was tested should be listed next to @tested.
