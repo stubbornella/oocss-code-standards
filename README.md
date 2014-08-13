@@ -402,7 +402,7 @@ All rules should be coded to expect JavaScript to be enabled. Rules that apply w
 ```css
 /* Good */
 .noJS .calloutContent {
-   display:block;
+   display: block;
 }
 
 /* Bad - don't use .js */
