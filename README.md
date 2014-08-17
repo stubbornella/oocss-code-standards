@@ -164,7 +164,7 @@ When using vendor-prefixed properties, always use the standard property as well.
 }
 ```
 
-If a vendor prefixed property is used, -moz, -webkit, -o, -ms vendor prefixes should also be used. Vendor-prefixed classes should align to the left with all other properties.
+If a vendor prefixed property is used, -moz, -webkit, -o, -ms vendor prefixes should also be used. Vendor-prefixed properties should align to the left with all other properties.
 
 ```css
 /* Good */
@@ -191,7 +191,8 @@ background: linear-gradient(...); /* W3C */
 ```
 
 Suffix fallback with “Old browsers” and standard property with “W3C”. Add a plus or minus to indicate that a property applies to all previous browsers by the same vendor or all future browsers by the same vendor.
-Using !important
+
+###Using !important
 
 Do not use !important on CSS properties. The only time this is allowed is in a global style (provided by Core team).
 
@@ -444,8 +445,6 @@ Selectors should never use HTML element IDs. Always use classes for applying sty
 }
 ```
 
-The author field should contain the username of the person who first created the file. Subsequent authors or primary maintainers may also choose to add their name. The browsers in which this file was tested should be listed next to @tested.
-
 ### Width and height on components
 
 No heights on anything that contains text. Components should be flexible and their widths should be controlled by grids.
@@ -522,3 +521,5 @@ Also, add file-level comments at the top of every CSS file, describing the file 
 * @requires     helpers.css (tied to the @name of another file)
 */
 ```
+
+The author field should contain the username of the person who first created the file. Subsequent authors or primary maintainers may also choose to add their name. The browsers in which this file was tested should be listed next to @tested.
