@@ -92,7 +92,7 @@ Each property must be on its own line and indented one level. There should be no
 
 ### Using CSS Preprocessors
 
-Keep nesting to 3 levels deep. 
+Keep nesting to 3 levels deep.
 
 ```scss
 /* Good */
@@ -191,7 +191,8 @@ background: linear-gradient(...); /* W3C */
 ```
 
 Suffix fallback with “Old browsers” and standard property with “W3C”. Add a plus or minus to indicate that a property applies to all previous browsers by the same vendor or all future browsers by the same vendor.
-Using !important
+
+### Using !important
 
 Do not use !important on CSS properties. The only time this is allowed is in a global style (provided by Core team).
 
@@ -268,7 +269,7 @@ Strings should always use double quotes (never single quotes).
 
 ### Background Images and Other URLs
 
-When using a url() value, always use quotes around the actual URL. 
+When using a url() value, always use quotes around the actual URL.
 
 ```css
 /* Good */
@@ -344,7 +345,7 @@ Only property hacks are allowed. To target Internet Explorer, use Internet Explo
 
 Each selector should appear on its own line. The line should break immediately after the comma. Each selector should be aligned to the same left column.
 
-```css 
+```css
 /* Good */
 button,
 input.button {
@@ -444,8 +445,6 @@ Selectors should never use HTML element IDs. Always use classes for applying sty
 }
 ```
 
-The author field should contain the username of the person who first created the file. Subsequent authors or primary maintainers may also choose to add their name. The browsers in which this file was tested should be listed next to @tested.
-
 ### Width and height on components
 
 No heights on anything that contains text. Components should be flexible and their widths should be controlled by grids.
@@ -522,3 +521,5 @@ Also, add file-level comments at the top of every CSS file, describing the file 
 * @requires     helpers.css (tied to the @name of another file)
 */
 ```
+
+The author field should contain the username of the person who first created the file. Subsequent authors or primary maintainers may also choose to add their name. The browsers in which this file was tested should be listed next to @tested.
