@@ -351,7 +351,7 @@ input.button {
    color: red;
 }
 
-/* Bad - selectors one on line */
+/* Bad - selectors on one line */
 button, input.button {
    color: red;
 }
